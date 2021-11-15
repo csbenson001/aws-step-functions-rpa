@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "easyInvoice"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-18xk1v6ozkqd5"
+s3_prefix = "easyInvoice"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM"
+parameter_overrides = "InvoicesTableNameSuffix=\"invoices\" ReadCapacityUnits=\"5\" WriteCapacityUnits=\"5\" ScannedInvoicesBucketNamePrefix=\"scanned-invoices\" InvoiceAnalysesBucketNamePrefix=\"invoice-analyses\" ProcessedInvoicesBucketNamePrefix=\"processed-invoices\""
